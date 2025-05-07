@@ -17,7 +17,9 @@ Le projet est divisé en plusieurs catégories d'exercices pratiques :
 - **Développement Frontend (HTML & CSS)** 🌟
 - **Backend et API** ⚙️
 
+
 ---
+
 
 ## 🧠 Git Commit Convention
 
@@ -30,4 +32,7 @@ Pour garder une historique clair et lisible, j’utilise une convention de commi
 - `chore:` 🧹 Tâche annexe (ex: suppression de fichiers inutiles)
 
 
-## Merci de votre visite ! 👋
+
+
+
+### Merci de votre visite ! 👋

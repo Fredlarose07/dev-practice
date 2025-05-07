@@ -1,24 +1,21 @@
-function bubbleSort(arr) {
-    let n = arr.length;
+let randomArray = [12, 32, 1, 34, 23, 35, 1, 50]
 
-    for (let i = 0; i < n - 1; i++) {
+function sort(array){
 
-        // Derniers éléments déjà triés, pas besoin de les comparer
-      for (let j = 0; j < n - i - 1; j++) {
+    for(let j = 0; j < array.length; j++){
 
-        // Si l'élément actuel est plus grand que le suivant, échange les positions
-        if (arr[j] > arr[j + 1]) {
-
-            // Échange des éléments
-          let temp = arr[j];
-          arr[j] = arr[j + 1];
-          arr[j + 1] = temp;
+        for(let i = 0; i < array.length -1; i++){
+        
+            if(array[i] > array[i +1]){
+                let temp = array[i]
+                array[i] = array[i +1]
+                array[i +1] = temp
+            }
         }
-      }
     }
-    return arr;
-  }
-  
-  // Exemple d'utilisation
-  let tableau = [5, 2, 8, 1, 3];
-  console.log(bubbleSort(tableau));  // [1, 2, 3, 5, 8]
+    
+    console.log(array)
+
+    }
+
+// sort(randomArray)
