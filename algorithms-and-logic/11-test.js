@@ -134,9 +134,63 @@ function findMissingNumber(arr){
         count++
     }
 
-
-    
 }
 
-findMissingNumber([1, 2, 3, 6, 8])
+// findMissingNumber([1, 2, 3, 6, 8])
                     
+
+function findMostFrequent(arr) {
+
+    obj = {};
+    maxCount = 0;
+    winner = [];
+
+    arr.forEach(element => {
+        
+        obj[element] = (obj[element] || 0) +1
+
+        if(maxCount < obj[element]){
+            maxCount = obj[element]
+        }   
+
+
+    });
+
+    for(element in obj){
+        if(obj[element] === maxCount){
+            winner.push(element)
+        }
+    }
+
+    console.log(winner)
+
+}
+
+// findMostFrequent([23, 23, 34, 34, 23, 14, 13, 34])
+
+
+function sortWithoutSort(arr){
+
+    let temp = 0;
+
+    for(j = 0; j < arr.length; j++){
+
+        for(i = 0; i < arr.length-1; i++){
+
+            if(arr[i] > arr[i + 1]){
+                temp = arr[i];
+                arr[i] = arr[i + 1]
+                arr[i + 1] = temp 
+
+                console.log(arr)
+            }
+    
+        }
+
+    }
+
+    console.log(arr)
+}
+
+
+sortWithoutSort([94, 32, 1, 34, 50, 35, 1, 24, 1])
