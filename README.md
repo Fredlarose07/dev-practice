@@ -21,6 +21,7 @@ Le projet est divisé en plusieurs catégories d'exercices pratiques :
 ---
 
 
+    
 ## 🧠 Git Commit Convention
 
 Pour garder une historique clair et lisible, j’utilise une convention de commit simple :
