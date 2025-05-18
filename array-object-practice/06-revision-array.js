@@ -40,3 +40,21 @@ const entries = [
 
 
 
+const sentence = "Le chat saute le mur et le chien regarde le chat";
+
+function wordCounter(chaine){
+
+    arr = chaine.split(' ') 
+    
+    obj = {}
+
+    arr.forEach(element => {
+        obj[element] = (obj[element] || 0) +1
+    });
+
+
+    return obj
+}
+
+
+console.log(wordCounter(sentence))
