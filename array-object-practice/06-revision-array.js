@@ -57,4 +57,36 @@ function wordCounter(chaine){
 }
 
 
-console.log(wordCounter(sentence))
+// console.log(wordCounter(sentence))
+
+const userss = [
+  { name: "Alice", role: "admin" },
+  { name: "Bob", role: "user" },
+  { name: "Charlie", role: "admin" },
+  { name: "David", role: "user" }
+];
+
+
+function byRole(list){
+
+    obj = {}
+
+    list.forEach(element => {
+
+        obj[element.role] = obj[element.role] || []
+        
+        if(element.role === "admin"){
+          obj.admin.push(element.name)
+        } else if(element.role === "user"){
+          obj.user.push(element.name) 
+        }
+
+      
+    });
+
+        console.log(obj)
+    
+}
+
+
+byRole(userss)
