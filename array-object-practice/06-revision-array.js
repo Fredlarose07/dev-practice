@@ -6,87 +6,99 @@ const users = [
 
   function extractUser(arr){
 
-    finalTab = []
+    tab = []
 
     arr.forEach(element => {
-        element.name
-        finalTab.push(element.name)
+        
+      tab.push(element.name)
     });
 
-    finalTab
-    console.log("🚀 ~ extractUser ~ finalTab:", finalTab)
+
+    console.log(tab)
   }
 
   // extractUser(users)
 
-const entries = [
+  function arrayDictionary(){
+
+    const entries = [
     ["name", "Alice"],
     ["age", 30],
     ["role", "admin"]
   ];
 
-  function arrayToDictionary(array){
-
   obj = {}
 
-  array.forEach(element => {
-      obj[element[0]] = element[1]
+  entries.forEach(element => {
+    obj[element[0]] = element[1] 
   });
-    
-  console.log("🚀 ~ arrayToDictionary ~ obj:", obj)
+
+
+    console.log(obj)
   }
 
-  // arrayToDictionary(entries);
+  // arrayDictionary()
 
+  function wordCounter(){
 
+    const sentence = "Le chat saute le mur et le chien regarde le chat";
 
-const sentence = "Le chat saute le mur et le chien regarde le chat";
-
-function wordCounter(chaine){
-
-    arr = chaine.split(' ') 
-    
+    let tab = sentence.toLowerCase().split(' ')
     obj = {}
 
-    arr.forEach(element => {
-        obj[element] = (obj[element] || 0) +1
+    tab.forEach(element => {
+      obj[element] = (obj[element] || 0) +1
     });
 
+    console.log(obj)
+    
+  }
 
-    return obj
-}
+  // wordCounter()
 
 
-// console.log(wordCounter(sentence))
+  function groupUserRole(){
 
-const userss = [
+    const users = [
   { name: "Alice", role: "admin" },
   { name: "Bob", role: "user" },
   { name: "Charlie", role: "admin" },
   { name: "David", role: "user" }
 ];
 
+  obj = {}
 
-function byRole(list){
+    users.forEach(element => {
 
-    obj = {}
-
-    list.forEach(element => {
-
-        obj[element.role] = obj[element.role] || []
-        
-        if(element.role === "admin"){
-          obj.admin.push(element.name)
-        } else if(element.role === "user"){
-          obj.user.push(element.name) 
-        }
-
+      obj[element.role] = (obj[element.role] || [])  
+      
+      obj[element.role].push(element.name)
       
     });
 
-        console.log(obj)
-    
+
+    console.log(obj)
+  }
+
+  // groupUserRole()
+
+  const nestedArray = [1, [2, [3, [4, 5]]]];
+
+  const newArr = []
+
+function flattenTheMatrix(arr,newArr = []){
+
+  arr.forEach(element => {
+    if(typeof element === "object"){
+      flattenTheMatrix(element, newArr)
+      
+    }else {
+      newArr.push(element)
+    }
+  });
+
+  return newArr
+
 }
 
-
-byRole(userss)
+console.log(flattenTheMatrix(nestedArray))
