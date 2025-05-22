@@ -1,0 +1,47 @@
+
+#sectionTodo{
+    background-color: rgb(184, 184, 184);
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+  .done {
+    text-decoration: line-through;
+    color: grey;
+  }
+
+
+li {
+    background-color: rgb(240, 240, 240);
+    margin : 16px;
+    padding: 16px;
+    color: rgb(78, 78, 78);
+    border-radius: 10px;
+}
+
+ul {
+    padding: 0;
+    width: 100px;
+    height: 100px;
+}
+
+
+input {
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    margin : 8px 0px;
+    padding: 16px;
+    border: none;
+}
+
+
+button {
+    border-radius: 10px;
+    margin : 8px 0px;
+    padding: 16px;
+    border: none;
+    background-color: rgb(54, 54, 54);
+    color: white;
+    font-weight: 700;
+}
