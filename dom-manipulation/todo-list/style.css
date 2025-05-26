@@ -1,7 +1,16 @@
+/* background */
+body{
+  background-color: #0e0d0d;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #f0f0f0;
+  margin: 32px;
+}
+
 /* Layout principal */
 #sectionTodo {
   border-radius: 10px;
   display: flex;
+  flex-direction: column;
 }
 
 /* Inputs & Buttons */
@@ -14,28 +23,31 @@ button {
 }
 
 input {
-  background-color: rgb(240, 240, 240);
+  background-color: #141414;
+  color: white;
 }
 
 button {
-  background-color: #363636;
-  color: white;
+  background-color: #4e4bec;
+  color: #ffffff;
   font-weight: 700;
 }
 
 /* Listes */
 ul {
   padding: 0;
-  width: 50%;
+  width: 70%;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 /* Tâche */
 li {
-  background-color: rgb(240, 240, 240);
-  margin: 8px;
-  padding: 14px;
-  color: rgb(78, 78, 78);
+  background-color: #141414;
+  padding: 10px 16px;
+  color: #929292;
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
@@ -67,5 +79,5 @@ li:hover .iconBtn {
 /* Survol de l'icône : totalement visible */
 li:hover .iconBtn:hover {
   opacity: 1;
-  background-color: rgb(231, 231, 231);
+  background-color: #1b1b1b;
 }
