@@ -1,6 +1,6 @@
 /* background */
 body{
-  background-color: #0e0d0d;
+  background-color: #0e0e0e;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #f0f0f0;
   margin: 32px;
@@ -10,7 +10,16 @@ body{
 #sectionTodo {
   border-radius: 10px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#sectionTaskList {
+  width: 60%;
+}
+
+#sectionDaily {
+  width: 20%;
 }
 
 /* Inputs & Buttons */
@@ -25,7 +34,14 @@ button {
 input {
   background-color: #141414;
   color: white;
+
+  border: none;
+  outline: none;
 }
+
+
+
+
 
 button {
   background-color: #4e4bec;
@@ -36,7 +52,6 @@ button {
 /* Listes */
 ul {
   padding: 0;
-  width: 70%;
   list-style-type: none;
   display: flex;
   flex-direction: column;
@@ -55,7 +70,7 @@ li {
 }
 
 /* Tâche terminée */
-.done {
+.check {
   text-decoration: line-through;
   color: grey;
 }
@@ -81,3 +96,6 @@ li:hover .iconBtn:hover {
   opacity: 1;
   background-color: #1b1b1b;
 }
+
+
+

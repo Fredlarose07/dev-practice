@@ -63,8 +63,6 @@
 // ========== TodoList ==========
 
 
-// function createTask
-
 function createTask(){
 
     // Je récupére le input, la liste de tache, et le bouton pour envoyer la tache. 
@@ -96,8 +94,6 @@ function createTask(){
 
 
 createTask()
-
-
 
 
 // function remove task
