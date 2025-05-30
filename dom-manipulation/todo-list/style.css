@@ -72,7 +72,7 @@ li {
 /* Tâche terminée */
 .check {
   text-decoration: line-through;
-  color: grey;
+  color: rgb(51, 51, 51);
 }
 
 /* Toujours présent mais invisible */
