@@ -59,6 +59,7 @@ function createRoutine(value, ul){
     // checkbox
     checkbox = document.createElement("input")
     checkbox.type = 'checkbox'
+    checkRoutine(checkbox, element)
 
     // text
     text = document.createElement("span")
@@ -102,5 +103,15 @@ function deleteTask(btnDelete, li){
     btnDelete.addEventListener("click", () => {
 
         li.remove()
+    })
+}
+
+
+function checkRoutine(checkbox, element){
+
+    element.addEventListener("click", () => {
+
+        checkbox.checked = !checkbox.checked;
+        element.classList.toggle("check")
     })
 }
