@@ -101,4 +101,37 @@ function flattenTheMatrix(arr,newArr = []){
 
 }
 
-console.log(flattenTheMatrix(nestedArray))
+// console.log(flattenTheMatrix(nestedArray))
+
+
+
+
+
+
+
+const userss = [
+    { name: "Alice", email: "alice@example.com", role: "admin" },
+    { name: "Bob", email: "bob@example.com", role: "user" },
+    { name: "Charlie", email: "charlie@example.com", role: "user" },
+  ];
+
+
+  function training(){
+
+
+    obj= {}
+
+    userss.forEach(element => {
+
+      obj[element.role] = obj[element.role] || []
+      
+      obj[element.role].push(element.name)
+
+      console.log(obj)
+
+
+      
+    });
+  }
+
+  training()
