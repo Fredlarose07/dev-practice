@@ -104,34 +104,23 @@ function flattenTheMatrix(arr,newArr = []){
 // console.log(flattenTheMatrix(nestedArray))
 
 
+const sentence = "Le chat saute le mur et le chien regarde le chat";
 
 
+function test(sentence){
 
+  let arr = sentence.toLowerCase().split(" ")
 
+  obj = {}
 
-const userss = [
-    { name: "Alice", email: "alice@example.com", role: "admin" },
-    { name: "Bob", email: "bob@example.com", role: "user" },
-    { name: "Charlie", email: "charlie@example.com", role: "user" },
-  ];
+  arr.forEach(element => {
+    
+    obj[element] = (obj[element] || 0) +1
 
+    
+  });
 
-  function training(){
+  console.log(obj)
+}
 
-
-    obj= {}
-
-    userss.forEach(element => {
-
-      obj[element.role] = obj[element.role] || []
-      
-      obj[element.role].push(element.name)
-
-      console.log(obj)
-
-
-      
-    });
-  }
-
-  training()
+  test(sentence)
