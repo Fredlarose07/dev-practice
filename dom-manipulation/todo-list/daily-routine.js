@@ -107,11 +107,16 @@ function deleteTask(btnDelete, li){
 }
 
 
-function checkRoutine(checkbox, element){
+function checkRoutine(checkbox, element) {
+    element.addEventListener("click", (e) => {
 
-    element.addEventListener("click", () => {
+        if (e.target === checkbox) return;
 
         checkbox.checked = !checkbox.checked;
-        element.classList.toggle("check")
-    })
+        element.classList.toggle("check");
+    });
+
+    checkbox.addEventListener("change", () => {
+        element.classList.toggle("check");
+    });
 }
