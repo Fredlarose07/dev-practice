@@ -18,19 +18,3 @@ function twoSum(array){
 twoSum(nums)
 
 
-function twoSum2(){
-
-    const cible = 9;
-
-    nums.forEach(element => {
-        
-        for(i = 0; i < nums.length; i++){
-
-            if(element + nums[i +1] === cible){
-                console.log(element + " et " + nums[i+1] + " sont des paires")
-            } 
-        }
-    });
-}
-
-twoSum2()
