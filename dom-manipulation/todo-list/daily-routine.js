@@ -102,15 +102,10 @@ function deleteTask(btnDelete, li){
 
 
 function checkRoutine(checkbox, element){
-    element.addEventListener("click", (e) => {
-        // Pour éviter de doubler le clic si la case est déjà cochée
-        if (e.target !== checkbox) {
-            checkbox.checked = !checkbox.checked
-            element.classList.toggle("check", checkbox.checked)
-        }
-    })
 
-    checkbox.addEventListener("change", () => {
-        element.classList.toggle("check", checkbox.checked)
+    element.addEventListener("click", () => {
+
+        checkbox.checked = !checkbox.checked;
+        element.classList.toggle("check")
     })
 }

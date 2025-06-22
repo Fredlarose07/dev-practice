@@ -16,3 +16,5 @@ function twoSum(array){
 
 
 twoSum(nums)
+
+

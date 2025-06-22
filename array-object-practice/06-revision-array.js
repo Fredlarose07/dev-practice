@@ -101,4 +101,27 @@ function flattenTheMatrix(arr,newArr = []){
 
 }
 
-console.log(flattenTheMatrix(nestedArray))
+// console.log(flattenTheMatrix(nestedArray))
+
+
+
+const sentence = "Le chat saute le mur et le chien regarde le chat";
+
+
+function test(sentence){
+
+  let arr = sentence.toLowerCase().split(" ")
+
+  obj = {}
+
+  arr.forEach(element => {
+    
+    obj[element] = (obj[element] || 0) +1
+
+    
+  });
+
+  console.log(obj)
+}
+
+  test(sentence)
