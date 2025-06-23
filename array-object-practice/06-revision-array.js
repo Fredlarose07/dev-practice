@@ -104,7 +104,6 @@ function flattenTheMatrix(arr,newArr = []){
 // console.log(flattenTheMatrix(nestedArray))
 
 
-
 const sentence = "Le chat saute le mur et le chien regarde le chat";
 
 
